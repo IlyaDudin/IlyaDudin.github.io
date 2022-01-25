@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Илья Дудин - Веб-разработчик</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
@@ -31,37 +33,39 @@
     <div class="about">
         <h2>ОБО МНЕ</h2>
         <div>
-        <img src="img/">
+        <img src="img/boy.png">
         </div>
-        <div><a>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, dolores. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat, quisquam. <br> Lorem ipsum dolor sit amet. </a></div>
-        <input type="submit" value="скачать резюме">
+        <div><a>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, dolores. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat, quisquam.</a> <br><a> Lorem ipsum dolor sit amet. </a></div>
+        <input type="submit" value="Cкачать резюме">
     </div>
     <div class="ican">
-        <div><img><h4>Веб-дизайн</h4><a>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae, similique.</a></div>
-        <div><img><h4>Разработка</h4><a>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae, similique.</a></div>
-        <div><img><h4>СЕО-оптимизация</h4><a>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae, similique.</a></div>
-        <div><img><h4>Маркетинг</h4><a>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae, similique.</a></div>
+       <h2>ЧТО Я УМЕЮ</h2>
+        <div id="wd"><h4>Веб-дизайн</h4><a>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae, similique.</a></div>
+        <div id="dev"><h4>Разработка</h4><a>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae, similique.</a></div>
+        <div id="ceo"><h4>СЕО-оптимизация</h4><a>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae, similique.</a></div>
+        <div id="mar"><h4>Маркетинг</h4><a>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae, similique.</a></div>
     </div>
     <div class="cases">
         <h2>КЕЙСЫ</h2>
         <h6>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, facilis!</h6>
-        <img src="img/">
+        <img src="img/cases.jpg">
     </div>
     <div class="cost">
         <form action="#">
-           <h2>РАССЧЁТ СТОИМОСТИ</h2>
+           <h2>РАСЧЁТ СТОИМОСТИ</h2>
+           <h3>ТИП САЙТА</h3>
            <select name="typesite" id="type">
                <option value="1">визитка</option>
                <option value="2">лендинг</option>
                <option value="3">магазин</option>
            </select>
-           <h2>ДИЗАЙН</h2>
+           <h3>ДИЗАЙН</h3>
            <select name="typesite" id="type">
                <option value="1">стандартный</option>
                <option value="2">с дополнениями</option>
                <option value="3">индивидуальный</option>
            </select>
-           <h2>АДАПТИВНОСТЬ</h2>
+           <h3>АДАПТИВНОСТЬ</h3>
            <select name="typesite" id="type">
                <option value="1">пк</option>
                <option value="2">пк, смартфон</option>
@@ -69,44 +73,44 @@
            </select>
         </form>
     </div>
-     <h2>НЕМНОГО СТАТИСТИКИ</h2>
-     <div class="stat">
-         <img src="#">
+     <div class="stat" id="mainstat">
+        <h2>НЕМНОГО СТАТИСТИКИ</h2>
+         <div class="stat1" id="happy">
          <h4>120</h4>
          <a>счастливых клиентов</a>
-         <div class="stat">
-         <img src="#">
+         </div>
+         <div class="stat1" id="hour">
          <h4>4600</h4>
-         <a>часов работы</a>
-         <div class="stat">
-         <img src="#">
+             <a>часов работы</a> </div>
+         <div class="stat1" id="proj">
          <h4>340</h4>
-         <a>проектов завершено</a>
-         <div class="stat">
-         <img src="#">
+             <a>проектов завершено</a> </div>
+         <div class="stat1" id="rew">        
          <h4>23</h4>
-         <a>наград получено</a>
-     </div>
-     <div class="otzivy">
-         <h2>ОТЗЫВЫ</h2>
-         <img src="#">
-         <a>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita aspernatur et quia est, natus libero corrupti nihil quidem sequi dicta?</a>
-     </div>
-     <div class="contacts"></div>
-     <h2>МОИ КОНТАКТЫ</h2>
-     <a>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, voluptatum!</a>
+             <a>наград получено</a> </div>
     </div>
+        <div class="otzivy">
+         <h2>ОТЗЫВЫ</h2>
+        <img src="img/rozha.jpg"></img>
+        <a id="otz1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, voluptatum!</a>
+     </div>
+     <div class="contacts">
+     <h2>МОИ КОНТАКТЫ</h2>
+     <a id="conta">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, voluptatum!</a>
+    <div class="cont1">
+        <div id="adr"> <a>адрес</a></div>
+        <div id="email"><a>email</a></div>
+        <div id="tel"><a>88005553535</a></div>
+         </div>   
     <div>
-     <img src="#"> <a>адрес</a>
-     <img src="#"> <a>email</a>
-     <img src="#"> <a>88005553535</a>
-     <form action="#">
-      <h2>Оставьте мне сообщение</h2>
-      <input type="name" placeholder="Ваше имя">
+      <form action="#">
+      <h2 id="send">Оставьте мне сообщение</h2>
+      <input type="name" placeholder="Ваше имя" id="in1">
       <input type="tel" placeholder="Ваш телефон">
       <textarea></textarea> 
       <input type="submit" placeholder="отправить">
      </form>
+    </div>
     </div>
 </body>
 </html>
