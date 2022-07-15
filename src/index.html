@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8">
     <title>Илья Дудин- Веб-разработчик</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
  <header>
@@ -31,6 +32,7 @@
  </div>
  <div class="about">
 <h2>ОБО МНЕ</h2>
+    <img src="img/boy.png">
      <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid nam, nesciunt voluptatibus libero ea pariatur sapiente amet magni culpa voluptate vel, quod consectetur distinctio optio.</p>
       <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid nam, nesciunt voluptatibus libero ea pariatur sapiente amet magni culpa voluptate vel, quod consectetur distinctio optio.</p>
       <input type="submit" value="Скачать резюме">
@@ -46,17 +48,22 @@
  </div>
  <div class="cases">
      <h2>КЕЙСЫ</h2>
-     <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, praesentium.</p>
+     <p id="c"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, praesentium.</p>
+     <img src="img/case.jpg">
+    <div class="clws">
      <h3>CLIENT:</h3>
      <p>Какая-то компания</p>
      <h3>WEBSITE:</h3>
      <p><a href="https://www.youtube.com/watch?v=XveGQdHa18I">www.leningrad-spb.ru</a></p>
-     <input type="submit" value="VISIT LIVE SITE">
+        <input type="submit" value="VISIT LIVE SITE"></input>
+     </div>
+    <div id="nzv">
      <h3>Название проекта</h3>
      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, sed.</p>
+    </div>
  </div>
  <div class="cost">
- <h1>Расчёт стоимости</h1>
+ <h2>Расчёт стоимости</h2>
  <form action="#">
      <h3>ТИП САЙТА</h3>
      <select name="type">
@@ -81,24 +88,48 @@
  </div>
  <div class="stat">
      <h2>НЕМНОГО СТАТИСТИКИ</h2>
+      <div id="statpic">
+     <div id="happy" class="stbl">
      <h4>120</h4>
      <p>счастливых клиентов</p>
+         </div>
+     <div id="hour" class="stbl">
      <h4>4600</h4>
      <p>часов работы</p>
+         </div>
+     <div id="kol" class="stbl">
      <h4>340</h4>
      <p>проектов завершено</p>
+         </div>
+         <div id="nag" class="stbl">
      <h4>23</h4>
      <p>наград получено</p>
+         </div>
  </div>
- <div>
+    </div>
+ <div class="otz">
      <h2>ОТЗЫВЫ</h2>
+     <img src="img/icon/muzhik.png">
      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, modi?</p>
-     <p>Михаил, Гендиректор ПАО "Газпром"</p>
+     <p id="miha">Михаил, Гендиректор ПАО "Газпром"</p>
  </div>
- <div class="cont"></div>
- <h2>МОИ КОНТАКТЫ</h2>
- <h6>спб, невский 11</h6>
- <h6>proton@mail.com</h6>
- <h6>88005553535</h6>
+ <div class="cont">
+   <h2>МОИ КОНТАКТЫ</h2>
+   <div>
+   <p id="contlorem">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex incidunt quasi reprehenderit!</p>
+     <div class="con" id="adr"><p>спб, невский 11</p></div>
+     <div class="con" id="ema"><p>proton@mail.com</p></div>
+    <div class="con" id="nom"><p>88005553535</p></div>
+     </div>
+     <div class="formcont">
+      <form action="#">
+   <h3>ОСТАВЬТЕ МНЕ СООБЩЕНИЕ</h3>
+ <input id="iname" type="text" placeholder="имя">
+ <input id="iema" type="email" placeholder="email">
+          <div id="imes"> <input type="text" placeholder="оставьте мне сообщение"></div> 
+ <input id="knop" type="submit" value="Отправить">    
+ </form>
+ </div>
+</div>
 </body>
 </html>
