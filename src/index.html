@@ -4,50 +4,69 @@
     <meta charset="utf-8">
     <title>Илья Дудин- Веб-разработчик</title>
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/preloader.css">
+    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+<script>
+  window.onload = function () {
+    document.body.classList.add('loaded');
+  }
+</script>
+<div class="preloader">
+  <div class="preloader__row">
+    <div class="preloader__item"></div>
+    <div class="preloader__item"></div>
+  </div>
+</div>
  <header>
      <nav>
          <div class="logo">Илья Дудин</div>
          <div class="menu">
              <ul>
-                 <li>Обо мне</li>
-                 <li>Услуги</li>
-                 <li>Кейсы</li>
-                 <li>Прайс</li>
-                 <li>Отзывы</li>
-                 <li>Контакты</li>
+                 <li><a href="#">Обо мне</a></li>
+                 <li><a href="#">Услуги</a></li>
+                 <li><a href="#">Кейсы</a></li>
+                 <li><a href="#">Прайс</a></li>
+                 <li><a href="#">Отзывы</a></li>
+                 <li><a href="#">Контакты</a></li>
              </ul>
          </div>
      </nav>
  </header>
- <div class="main">
+ <main>
+ <section class="main">
     <div class="title_container">
        <h1>Привет<br> Я Илья Дудин</h1>
        <h4>Фулл стек веб-разработчик</h4>
-       <input type="submit" value="Обо мне">
-       <input type="submit" value="Мои работы">
+       <input type="button" value="Обо мне">
+       <input type="button" value="Мои работы">
     </div>
- </div>
- <div class="about">
-<h2>ОБО МНЕ</h2>
+ </section>
+    </main>
+ <section class="about">
+    <h2>ОБО МНЕ</h2>
+    <hr>
     <img src="img/boy.png">
      <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid nam, nesciunt voluptatibus libero ea pariatur sapiente amet magni culpa voluptate vel, quod consectetur distinctio optio.</p>
       <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid nam, nesciunt voluptatibus libero ea pariatur sapiente amet magni culpa voluptate vel, quod consectetur distinctio optio.</p>
-      <input type="submit" value="Скачать резюме">
- </div>
- <div class="ican">
+      <a href="#">Скачать резюме</a>
+ </section>
+ <section class="ican">
   <h2>ЧТО Я УМЕЮ</h2>
+  <hr>
    <div id="wd"> <h3>Веб-дизайн</h3> <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, corrupti.</p> </div>
    <div id="dev"> <h3>Разработка</h3> <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia, alias.</p> </div>
    <div id="ceo"> <h3>CEO-Оптимизация</h3>
    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia, alias.</p> </div>
    <div id="mar"> <h3>Маркетинг</h3>
    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia, alias.</p> </div> 
- </div>
- <div class="cases">
+ </section>
+ <section class="cases">
+    <div class="casescont">
      <h2>КЕЙСЫ</h2>
+     <hr>
      <p id="c"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, praesentium.</p>
      <img src="img/case.jpg">
     <div class="clws">
@@ -55,14 +74,15 @@
      <p>Какая-то компания</p>
      <h3>WEBSITE:</h3>
      <p><a href="https://www.youtube.com/watch?v=XveGQdHa18I">www.leningrad-spb.ru</a></p>
-        <input type="submit" value="VISIT LIVE SITE"></input>
+        <a id="casebut" href="https://www.youtube.com/watch?v=XveGQdHa18I">Visit Live Site</a>
      </div>
     <div id="nzv">
-     <h3>Название проекта</h3>
+     <h4>Название проекта</h4>
      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, sed.</p>
     </div>
- </div>
- <div class="cost">
+    </div>
+ </section>
+ <section class="cost">
  <h2>Расчёт стоимости</h2>
  <form action="#">
      <h3>ТИП САЙТА</h3>
@@ -85,9 +105,10 @@
      <p>сроки</p>
      <p>стоимость</p>
  </form>
- </div>
- <div class="stat">
+ </section>
+ <section class="stat">
      <h2>НЕМНОГО СТАТИСТИКИ</h2>
+     <hr>
       <div id="statpic">
      <div id="happy" class="stbl">
      <h4>120</h4>
@@ -106,15 +127,17 @@
      <p>наград получено</p>
          </div>
  </div>
-    </div>
- <div class="otz">
+    </section>
+ <section class="otz">
      <h2>ОТЗЫВЫ</h2>
+     <hr>
      <img src="img/icon/muzhik.png">
      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, modi?</p>
      <p id="miha">Михаил, Гендиректор ПАО "Газпром"</p>
- </div>
- <div class="cont">
+ </section>
+ <section class="cont">
    <h2>МОИ КОНТАКТЫ</h2>
+   <hr>
    <div>
    <p id="contlorem">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex incidunt quasi reprehenderit!</p>
      <div class="con" id="adr"><p>спб, невский 11</p></div>
@@ -123,13 +146,13 @@
      </div>
      <div class="formcont">
       <form action="#">
-   <h3>ОСТАВЬТЕ МНЕ СООБЩЕНИЕ</h3>
- <input id="iname" type="text" placeholder="имя">
- <input id="iema" type="email" placeholder="email">
+   <h3 class="animate__heartBeat">ОСТАВЬТЕ МНЕ СООБЩЕНИЕ</h3>
+ <input id="iname" type="text" placeholder="Имя">
+ <input id="iema" type="email" placeholder="Email">
           <div id="imes"> <textarea placeholder="оставьте мне сообщение"></textarea></div> 
- <input id="knop" type="submit" value="Отправить">    
+ <input class="animate__heartBeat" id="knop" type="submit" value="Отправить">    
  </form>
  </div>
-</div>
+</section>
 </body>
 </html>
