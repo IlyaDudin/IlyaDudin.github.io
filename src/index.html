@@ -6,7 +6,9 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/preloader.css">
     <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <!--<link rel="stylesheet" href="css/stylebootstr.css">!-->
 </head>
 <body>
 <script>
@@ -22,8 +24,10 @@
 </div>
  <header>
      <nav>
-         <div class="logo">Илья Дудин</div>
-         <div class="menu">
+        <div class="container">
+        <div class="row">
+            <div class="col-xxl-2 col-lg-3 col-7"><div class="logo">Илья Дудин</div></div>
+            <div class="px-0 col-xxl-6 col-xl-7 col-lg-8 offset-xxl-4 offset-xl-2 offset-lg-1 d-none d-lg-block"><div class="menu">
              <ul>
                  <li><a href="#">Обо мне</a></li>
                  <li><a href="#">Услуги</a></li>
@@ -32,127 +36,192 @@
                  <li><a href="#">Отзывы</a></li>
                  <li><a href="#">Контакты</a></li>
              </ul>
+         </div></div>
+           <div class="col-5 d-flex d-lg-none flex-column justify-content-center align-items-end">
+               <div class="dropdown">
+  <a class="btn btn-outline-secondary white-btn" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+    Навигация
+  </a>
+
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+    
+                 <li><a class="dropdown-item" href="#">Обо мне</a></li>
+                 <li><a class="dropdown-item" href="#">Услуги</a></li>
+                 <li><a class="dropdown-item" href="#">Кейсы</a></li>
+                 <li><a class="dropdown-item" href="#">Прайс</a></li>
+                 <li><a class="dropdown-item" href="#">Отзывы</a></li>
+                 <li><a class="dropdown-item" href="#">Контакты</a></li>
+  </ul>
+</div>
+           </div>
+            </div>
          </div>
+         
+           
      </nav>
  </header>
  <main>
  <section class="main">
-    <div class="title_container">
+   <div class="container h-100"><div class="row h-100 align-items-center"><div class="col-lg-6 mt-5 pt-5">
+    <div class="title_container mt-5">
        <h1>Привет<br> Я Илья Дудин</h1>
        <h4>Фулл стек веб-разработчик</h4>
        <input type="button" value="Обо мне">
        <input type="button" value="Мои работы">
     </div>
+       </div></div></div>
  </section>
     </main>
- <section class="about">
-    <h2>ОБО МНЕ</h2>
-    <hr>
-    <img src="img/boy.png">
-     <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid nam, nesciunt voluptatibus libero ea pariatur sapiente amet magni culpa voluptate vel, quod consectetur distinctio optio.</p>
-      <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid nam, nesciunt voluptatibus libero ea pariatur sapiente amet magni culpa voluptate vel, quod consectetur distinctio optio.</p>
-      <a href="#">Скачать резюме</a>
- </section>
- <section class="ican">
-  <h2>ЧТО Я УМЕЮ</h2>
-  <hr>
-   <div id="wd"> <h3>Веб-дизайн</h3> <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, corrupti.</p> </div>
-   <div id="dev"> <h3>Разработка</h3> <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia, alias.</p> </div>
-   <div id="ceo"> <h3>CEO-Оптимизация</h3>
-   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia, alias.</p> </div>
-   <div id="mar"> <h3>Маркетинг</h3>
-   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia, alias.</p> </div> 
- </section>
- <section class="cases">
-    <div class="casescont">
-     <h2>КЕЙСЫ</h2>
+     <section class="about">
+     <div class="container">
+        <div class="row justify-content-center">
+           <div class="about col-12">
+            <h2 class="mx-auto d-block">обо мне</h2>
+            <hr>
+             <img class="d-block mx-auto" src="img/about.png">
+             <p class="col-8 col-lg-10 col-md-10 col-s-12 d-flex justify-content-center mx-auto "> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid nam, nesciunt voluptatibus libero ea pariatur sapiente amet magni culpa voluptate vel, quod consectetur distinctio optio.</p>
+      <p class="col-8 d-flex justify-content-center mx-auto"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid nam, nesciunt voluptatibus libero ea pariatur sapiente amet magni culpa voluptate vel, quod consectetur distinctio optio.</p>
+          <button type="button" class="aknop d-flex btn btn-outline-secondary justify-content-center">Скачать резюме</button>
+           </div>
+        </div>
+     </div>
+    </section>
+    <section class="ican">
+    <div class="container icanco col-12">
+        <h2>ЧТО Я УМЕЮ</h2>
+        <hr class="mx-auto">
+        <div class="row text-center justify-content-center">
+            <div class="mt-5 col-md-3 col-sm-6 col-lg-3"><img src="img/icon/wd.png">  <h3 class="mb-1 mt-3">Веб-дизайн</h3><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla, minus.</p></div>
+            <div class="mt-5 col-md-3 col-sm-6 col-lg-3"><img src="img/icon/dev.png"><h3 class="mb-1 mt-3">Разработка</h3><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla, minus.</p></div>
+            <div class="mt-5 col-md-3 col-sm-6 col-lg-3"><img src="img/icon/ceo.png"><h3 class="mb-1 mt-3">СЕО</h3><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla, minus.</p></div>
+            <div class="mt-5 col-md-3 col-sm-6 col-lg-3"><img src="img/icon/mark.png"><h3 class="mb-1 mt-3">Маркетинг</h3><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla, minus.</p></div>
+        </div>   
+        </div>
+    </section>
+    <section class="cases">
+    <div class="container">
+        <h2>КЕЙСЫ</h2>
      <hr>
-     <p id="c"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, praesentium.</p>
-     <img src="img/case.jpg">
-    <div class="clws">
-     <h3>CLIENT:</h3>
+     <p class="text-center casep">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt libero ea ut?</p>
+     <img class="mx-auto col-12" src="img/case.jpg">
+     <div class="row">
+         <div class="col-md-3 col-12">
+             <h3>CLIENT:</h3>
      <p>Какая-то компания</p>
      <h3>WEBSITE:</h3>
-     <p><a href="https://www.youtube.com/watch?v=XveGQdHa18I">www.leningrad-spb.ru</a></p>
-        <a id="casebut" href="https://www.youtube.com/watch?v=XveGQdHa18I">Visit Live Site</a>
-     </div>
-    <div id="nzv">
-     <h4>Название проекта</h4>
+        <a class="casebut btn btn-primary btn-lg" href="https://www.youtube.com/watch?v=XveGQdHa18I">Visit Live Site</a>
+        </div>
+        <div class="col-12 col-md-9">
+            <h3>Название проекта</h3>
      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, sed.</p>
-    </div>
-    </div>
- </section>
- <section class="cost">
- <h2>Расчёт стоимости</h2>
- <form action="#">
-     <h3>ТИП САЙТА</h3>
-     <select name="type">
-         <option value="vzt">визитка</option>
-         <option value="lnd">лендинг</option>
-         <option value="shp">интернет-магазин</option>
-     </select>
-     <h3>ДИЗАЙН</h3>
-     <select name="dsg">
-         <option value="std">стандартный</option>
-         <option value="unk">уникальный</option>
-     </select>
-     <h3>АДАПТИВНОСТЬ</h3>
-     <select name="adpt">
-         <option value="kmp">компьютер</option>
-         <option value="kmptel">компьютер-телефон</option>
-         <option value="alldev">все устройства</option>
-     </select>
-     <p>сроки</p>
-     <p>стоимость</p>
- </form>
- </section>
- <section class="stat">
-     <h2>НЕМНОГО СТАТИСТИКИ</h2>
-     <hr>
-      <div id="statpic">
-     <div id="happy" class="stbl">
-     <h4>120</h4>
-     <p>счастливых клиентов</p>
-         </div>
-     <div id="hour" class="stbl">
-     <h4>4600</h4>
-     <p>часов работы</p>
-         </div>
-     <div id="kol" class="stbl">
-     <h4>340</h4>
-     <p>проектов завершено</p>
-         </div>
-         <div id="nag" class="stbl">
-     <h4>23</h4>
-     <p>наград получено</p>
-         </div>
- </div>
-    </section>
- <section class="otz">
-     <h2>ОТЗЫВЫ</h2>
-     <hr>
-     <img src="img/icon/muzhik.png">
-     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, modi?</p>
-     <p id="miha">Михаил, Гендиректор ПАО "Газпром"</p>
- </section>
- <section class="cont">
-   <h2>МОИ КОНТАКТЫ</h2>
-   <hr>
-   <div>
-   <p id="contlorem">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex incidunt quasi reprehenderit!</p>
-     <div class="con" id="adr"><p>спб, невский 11</p></div>
-     <div class="con" id="ema"><p>proton@mail.com</p></div>
-    <div class="con" id="nom"><p>88005553535</p></div>
+        </div>
      </div>
-     <div class="formcont">
-      <form action="#">
-   <h3 class="animate__heartBeat">ОСТАВЬТЕ МНЕ СООБЩЕНИЕ</h3>
- <input id="iname" type="text" placeholder="Имя">
- <input id="iema" type="email" placeholder="Email">
-          <div id="imes"> <textarea placeholder="оставьте мне сообщение"></textarea></div> 
- <input class="animate__heartBeat" id="knop" type="submit" value="Отправить">    
- </form>
- </div>
-</section>
-</body>
-</html>
+    </div>
+    </section>
+    <section class="cost">
+    <div class="container">
+        <h2 class="mb-4">Расчёт стоимости</h2>
+        <div class="row justify-content-center">
+        <form action="#" class="col-12 col-xl-10">
+           <h3>ТИП САЙТА</h3>
+            <select class="form-select fs form-select-lg mb-3 mt-3" aria-label=".form-select-lg пример">
+            <option selected>Откройте это меню выбора</option>
+  <option value="1">Один</option>
+  <option value="2">Два</option>
+  <option value="3">Три</option>
+</select>
+     <h3>ДИЗАЙН</h3>
+<select class="form-select fs form-select-lg mb-3 mt-3" aria-label=".form-select-lg пример">
+  <option selected>Откройте это меню выбора</option>
+  <option value="1">Один</option>
+  <option value="2">Два</option>
+  <option value="3">Три</option>
+</select>
+     <h3>АДАПТИВНОСТЬ</h3>
+<select class="form-select fs form-select-lg mb-3 mt-3" aria-label=".form-select-lg пример">
+  <option selected>Откройте это меню выбора</option>
+  <option value="1">Один</option>
+  <option value="2">Два</option>
+  <option value="3">Три</option>
+</select>
+<div class="calcres row">
+    <div class="col-2">
+        <p>Сроки</p>
+        <p>Стоимость</p>
+    </div>
+    <div class="col-10 text-end"><p>0</p><p>0</p></div>
+</div>
+<div class="row justify-content-center text-center">
+<div class="col-12 ">
+<input class="btn btn-primary mx-auto btn-lg" type="submit" value="Оставить заявку">
+    </div></div>
+        </form>
+        </div>
+    </div>
+    </section>
+    <section class="stat mt-5">
+       <div class="container text-center">
+          <h2 mt-3>НЕМНОГО СТАТИСТИКИ</h2>
+          <hr>
+           <div class="row">
+           <div class="col-md-3 col-sm-6 col-12 mt-4">
+                        <img src="img/icon/smile.png" class="mb-4">
+                        <h3>12</h3>
+                        <p>СЧАСТЛИВЫХ КЛИЕНТОВ</p>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-12 mt-4">
+                        <img src="img/icon/skobki.png" class="mb-4">
+                        <h3>4600</h3>
+                        <p>ЧАСОВ РАБОТЫ</p>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-12 mt-4">
+                        <img src="img/icon/gal.png" class="mb-4">
+                        <h3>340</h3>
+                        <p>ПРОЕКТОВ ЗАВЕРШЕНО</p>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-12 mt-4">
+                        <img src="img/icon/kub.png" class="mb-4">
+                        <h3>23</h3>
+                        <p>НАГРАД ПОЛУЧЕНО</p>
+           </div>
+       </div>
+        </div>
+    </section>
+    <section class="otz text-center">
+     <h2>ОТЗЫВЫ</h2>
+     <hr class="mx-auto mt-4">
+     <div class="row justify-contenr-center text-center">
+     <div class="container">
+     <img src="img/icon/muzhik.png">
+     <p class="mt-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique alias aliquam tempora, eligendi nemo assumenda minimat. Esse, asperiores ex hic deserunt!</p>
+     <p class="mt-3">Михаил. Ген директор ПАО "газпром"</p>
+     </div>
+     </div>
+    </section>
+    <section class="cont">
+    <div class="container text-center">
+        <h2>МОИ КОНТАКТЫ</h2>
+        <hr class="mx-auto">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum ipsam, ipsa similique?</p>
+        <div class="row text-center justify-content-center">
+        <div class="con col-lg-3 col-sm-4 col-12"><img class="pt-5" src="img/icon/geo.png"><p class="mt-3">спб, невский 11</p></div>
+        <div class="con col-lg-3 col-sm-4 col-12"><img class="pt-5" src="img/icon/konv.png"><p class="mt-3">proton@mail.com</p></div>
+        <div class="con col-lg-3 col-sm-4 col-12"><img class="pt-5" src="img/icon/truba.png"><p class="mt-3">88005553535</p></div>
+        </div>
+        <form action="#"> 
+        <div class="row justify-content-center text-center mt-5">
+            <h3>ОСТАВЬТЕ МНЕ СООБЩЕНИЕ</h3>
+            <div class="col-lg-4 col-12 icont mt-4"><input class="w-100" type=text placeholder="Имя"></div>
+            <div class="col-lg-4 col-12 icont mt-4"><input class="w-100" type=email placeholder="EMail"></div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-lg-8 col-12 mt-4">
+             <textarea class="w-100 mcon" placeholder="оставьте мне сообщение"></textarea>
+            </div>
+        </div>
+        <button type="submit" class="btn btn-outline-light btn-lg mt-4">Отправить</button>
+        </form>
+    </div>
+    </section>
+<script src="js/bootstrap.bundle.min.js"></script> 
+    </body>
